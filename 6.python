@@ -1,0 +1,26 @@
+def add_numbers(a, b):
+    return a + b
+
+def square(a):
+    return a ** 2
+
+def month_name(month):
+    months = ["January","February","March","April","May","June",
+              "July","August","September","October","November","December"]
+    return months[month-1]
+
+def concat_strings(str1, str2, str3):
+    return str1 + str2 + str3
+
+def discount_price(price, discount):
+    return price - (price * discount / 100)
+
+
+print(add_numbers(10, 20))
+print(square(7))
+
+month = int(input("ป้อนเลขเดือน 1-12: "))
+print(month_name(month))
+
+print(concat_strings("Hello", "World"))
+print(discount_price(1000, 15))
